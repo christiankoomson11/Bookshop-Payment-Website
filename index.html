@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookshop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Bookshop</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="book-list">
+
+            <article class="book-card">
+                <img src="image/atomic-habits.jpg" alt="Atomic Habits book cover">
+                <div class="book-info">
+                    <h2>Atomic Habits</h2>
+                    <p>Learn how small daily improvements lead to remarkable results through powerful habit building techniques.</p>
+                    <p class="price">£10.99</p>
+                    <button class="pay-button add-to-cart" data-title="Atomic Habits" data-price="10.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <img src="image/clean-code.jpg" alt="Clean Code book cover">
+                <div class="book-info">
+                    <h2>Clean Code</h2>
+                    <p>A must read for developers, teaching how to write readable, maintainable, and professional quality code.</p>
+                    <p class="price">£24.99</p>
+                    <button class="pay-button add-to-cart" data-title="Clean Code" data-price="24.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <img src="image/deep-work.jpg" alt="Deep Work book cover">
+                <div class="book-info">
+                    <h2>Deep Work</h2>
+                    <p>Improve focus and productivity by eliminating distractions and mastering high value work.</p>
+                    <p class="price">£19.99</p>
+                    <button class="pay-button add-to-cart" data-title="Deep Work" data-price="19.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <img src="image/psychology-of-money.jpg" alt="Psychology of Money book cover">
+                <div class="book-info">
+                    <h2>Psychology of Money</h2>
+                    <p>Explore the complex relationship between people and money, and how to make better financial decisions.</p>
+                    <p class="price">£14.99</p>
+                    <button class="pay-button add-to-cart" data-title="Psychology of Money" data-price="14.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="cart-section">
+            <h2>Shopping Cart</h2>
+
+            <p id="cartMessage"></p>
+
+            <div id="cartItems"></div>
+
+            <h3>Total: £<span id="cartTotal">0.00</span></h3>
+
+            <a class="pay-button" href="pay.html">Proceed to Payment</a>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

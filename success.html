@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Successful</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="success-container">
+            <h2 id="successMessage"> Thank you for your payment.</h2>
+
+            <p>Your payment was completed successfully.</p>
+
+            <p class="masked-card">
+                Card used: <span id="maskedCard">**** **** **** 0000</span>
+            </p>
+            
+            <p>Total Paid: £<span id="successTotal">0.00</span></p>
+
+            <a class="pay-button" href="index.html">Return to Home</a>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

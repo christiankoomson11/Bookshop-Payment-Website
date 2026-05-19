@@ -1,0 +1,255 @@
+/* GENERAL STYLING */
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e8f0ff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+   background-color: #1e1e1e;
+   color: white;
+   padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+/* MAIN CONTENT */
+
+.book-lisy {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* BOOK CARD */
+
+.book-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+}
+
+.book-card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+/* BOOK INFO */
+
+.book-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book0-info h2 {
+    margin-bottom: 10px;
+}
+
+.book-info p {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #008000;
+}
+
+/* PAY BUTTON */
+
+.pay-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+    background-color: #005fa3;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .book-list {
+        grid-template-columns : 1fr;
+    }
+
+    .book-card {
+        flex-direction: column;
+    }
+
+    .book-card img {
+        width: 100%;
+        height: 350px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* PAYMENT PAGE */
+.payment-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* SUCCESS PAGE */
+
+.success-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.success-container h2 {
+    color: #008000;
+    margin-bottom: 15px;
+}
+
+.success-container p {
+    margin-bottom: 20px;
+}
+
+.masked-card {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* CART SECTION */
+
+.cart-section {
+    margin-top: 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cart-section h2 {
+    margin-bottom: 20px;
+}
+
+#cartItems {
+    margin-bottom: 10px;
+}
+
+#cartTotal {
+    color: #008000;
+}
+
+#cartMessage {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pay-button:hover {
+    transform: scale(1.03);
+}
